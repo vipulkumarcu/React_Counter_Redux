@@ -19,12 +19,12 @@ function Counter ()
 
   function AddMoreHandler ()
   {
-    dispatch ( { type: "increment by 5" } );
+    dispatch ( { type: "increment by 5", value: 5 } );
   };
 
   function RemoveMoreHandler ()
   {
-    dispatch ( { type: "decrement by 5" } );
+    dispatch ( { type: "decrement by 5", value: 5  } );
   };
 
   function toggleCounterHandler ()

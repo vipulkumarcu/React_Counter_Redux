@@ -19,14 +19,14 @@ function counterReducer ( state = { counter : 0 }, action )
   if ( action.type === "increment by 5" )
   {
     return {
-      counter : state.counter + 5,
+      counter : state.counter + action.value,
     }
   }
 
   if ( action.type === "decrement by 5" )
   {
     return {
-      counter : state.counter - 5,
+      counter : state.counter - action.value,
     }
   }
 
